@@ -8,7 +8,7 @@
 
 # Global Solution - 1º Semestre
 
-## Fase 4 – Capítulo 1  
+## Fase 4  
 Período: 26/05/2025 a 06/06/2025
 
 ## 👨‍🎓 Integrantes:
@@ -134,8 +134,8 @@ https://github.com/limadeivisson/global-solution-fase4-2025
 
 ## 🎥 Vídeo da Demonstração
 
-- 📹 Link do vídeo (não listado): [Insira aqui o link]
-> O vídeo deve iniciar com a frase: **“QUERO CONCORRER”**.
+- 📹 Link do vídeo (não listado): [https://youtu.be/qMT_po4nBic](https://youtu.be/qMT_po4nBic)
+> O vídeo inicia com a frase: **“QUERO CONCORRER”**.
 
 ---
 
