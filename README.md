@@ -72,7 +72,7 @@ A FIAP incentiva o uso de dados análogos aos disponíveis no portal [https://di
 
 ---
 
-### 📦 Tecnologias utilizadas
+## 🛠️ Tecnologias e Dependências
 - Python 3.x
 - ESP32 com sensor simulado (ultrassônico ou botão)
 - Pandas, Scikit-learn, Geopandas, Rasterio
@@ -81,12 +81,7 @@ A FIAP incentiva o uso de dados análogos aos disponíveis no portal [https://di
 - Dados de [disasterscharter.org](https://disasterscharter.org)
 - Git e GitHub
 
-### 🤖 Machine Learning
-- Tipo de modelo: Regressão Logística
-- Entradas: elevação, distância a rios, latitude, longitude
-- Saídas: risco de inundação (0 = baixo, 1 = alto)
 
----
 
 ## ✅ Resultados Esperados
 
@@ -139,11 +134,30 @@ https://github.com/limadeivisson/global-solution-fase4-2025
 
 ## 🎥 Vídeo da Demonstração
 
-- Link YouTube (não listado): [inserir aqui o link do vídeo com a frase “QUERO CONCORRER” no início]
+- 📹 Link do vídeo (não listado): [Insira aqui o link]
+> O vídeo deve iniciar com a frase: **“QUERO CONCORRER”**.
+
+---
+
+## 🔮 Melhorias Futuras (Sugestões)
+
+* **Generalização e Validação**: Testar e validar a adaptabilidade do sistema para diferentes cidades com diferentes características e fontes de dados.
+* **Fonte de Dados para POIs**: Permitir que os POIs para predição sejam carregados de um arquivo externo (CSV, GeoJSON).
+* **Integração de Dados de Sensores em Tempo Real**: Além da simulação, integrar com dados reais de sensores (requer hardware e infraestrutura).
+* **Modelos Mais Avançados**: Experimentar com outros algoritmos de Machine Learning (ex: Random Forest, Gradient Boosting, Redes Neurais) para buscar melhorias na performance da predição.
+* **Validação Robusta**: Implementar técnicas de validação cruzada mais sofisticadas e otimização de hiperparâmetros.
+* **Interface de Usuário**: Desenvolver uma interface gráfica (web ou desktop) para facilitar a interação com o sistema.
+* **API para Predições**: Expor a funcionalidade de predição através de uma API.
+* **Aprofundamento na Integração GCP**: Expandir o uso de Vertex AI Pipelines para MLOps, Model Monitoring, etc.
 
 ---
 
 ## 📄 Licença
 
-Projeto acadêmico desenvolvido para a FIAP – Global Solution 2025.1.
-Todos os direitos reservados aos autores.
+Este projeto foi desenvolvido para fins acadêmicos no âmbito da FIAP Global Solution 2025.1. Todos os direitos relativos a este código e seus componentes são reservados ao(s) autor(es).
+
+**Copyright © 2025 Omar Calil Abrão Mustafá Assem**
+
+Nenhuma parte deste projeto pode ser reproduzida, distribuída ou transmitida de qualquer forma ou por qualquer meio, incluindo fotocópia, gravação ou outros métodos eletrônicos ou mecânicos, sem a permissão prévia por escrito do(s) autor(es), exceto no caso de breves citações incorporadas em revisões críticas e certos outros usos não comerciais permitidos pela lei de direitos autorais.
+
+Para consultas sobre permissões, pode-se contatar o autor principal através das informações de perfil na plataforma FIAP ou e-mail fornecido no cadastro da Global Solution (ocama12@gmail.com).
