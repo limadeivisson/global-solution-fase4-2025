@@ -1,0 +1,20 @@
+# Ignorar ambientes virtuais Python
+/Lib
+/Include
+/Scripts
+/pyvenv.cfg
+*.py[cod]
+__pycache__/
+.env
+
+# Ignorar arquivos de IDE e SO
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Ignorar arquivos temporários e de debug gerados
+/temp_curvature_debug.tif
+
+# Ignorar a pasta de saídas (opcional, mas recomendado se grande)
+# /output/

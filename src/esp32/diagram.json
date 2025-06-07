@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "author": "FloodSentryAI - OmarAssem",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "hcsr04",
+      "top": -123.3,
+      "left": 24.7,
+      "attrs": { "distance": "14", "label": "Sensor Ultrassônico HC-SR04" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnRain",
+      "top": -3.4,
+      "left": -86.4,
+      "attrs": { "color": "blue", "xray": "", "label": "Botão Simulação de Chuva" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledMqtt",
+      "top": 130.8,
+      "left": 186.2,
+      "attrs": { "color": "green", "label": "LED Status MQTT (D2)" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rMqtt",
+      "top": 167.15,
+      "left": 124.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRain",
+      "top": 121.2,
+      "left": 282.2,
+      "attrs": { "color": "blue", "label": "LED Evento de Chuva (D4)" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRain",
+      "top": 138.35,
+      "left": 230.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledWater",
+      "top": -3.6,
+      "left": 243.8,
+      "attrs": { "color": "yellow", "label": "LED Nível da Água (RX2/D16)" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rWater",
+      "top": 71.15,
+      "left": 268.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledRisk",
+      "top": -3.6,
+      "left": 147.8,
+      "attrs": { "color": "red", "label": "LED Risco Alto (TX2/D17)" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rRisk",
+      "top": 71.15,
+      "left": 182.4,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "hcsr04:VCC", "esp:5V", "green", [ "h0" ] ],
+    [ "hcsr04:GND", "esp:GND", "black", [ "h0" ] ],
+    [ "hcsr04:TRIG", "esp:D12", "blue", [ "h-125.2", "v159.2" ] ],
+    [ "hcsr04:ECHO", "esp:D14", "purple", [ "v19.2", "h-125.6", "v129.6" ] ],
+    [ "btnRain:1", "esp:GND", "black", [ "v0" ] ],
+    [ "btnRain:2", "esp:D27", "green", [ "v0" ] ],
+    [ "ledMqtt:A", "esp:D2", "green", [ "v0" ] ],
+    [ "ledMqtt:C", "rMqtt:1", "green", [ "v0" ] ],
+    [ "rMqtt:2", "esp:GND", "black", [ "v0" ] ],
+    [ "ledRain:A", "esp:D4", "blue", [ "v0" ] ],
+    [ "ledRain:C", "rRain:1", "blue", [ "v0" ] ],
+    [ "rRain:2", "esp:GND", "black", [ "v0" ] ],
+    [ "ledWater:A", "esp:RX2", "orange", [ "v0" ] ],
+    [ "ledWater:C", "rWater:1", "orange", [ "v0" ] ],
+    [ "rWater:2", "esp:GND", "black", [ "v0" ] ],
+    [ "ledRisk:A", "esp:TX2", "red", [ "v0" ] ],
+    [ "ledRisk:C", "rRisk:1", "red", [ "v0" ] ],
+    [ "rRisk:2", "esp:GND", "black", [ "v0" ] ]
+  ],
+  "serialMonitor": { "display": "always", "newline": "cr" },
+  "dependencies": {}
+}

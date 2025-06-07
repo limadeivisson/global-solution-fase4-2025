@@ -1,0 +1,17 @@
+FloodSentryESP32_OmarAssem
+
+https://wokwi.com/projects/432224729254830081
+
+https://testclient-cloud.mqtt.cool/
+
+tcp://test.mosquitto.org:1883
+
+fiap/gs/OmarAssem/flood_sentry/sensor/water_level
+fiap/gs/OmarAssem/flood_sentry/sensor/rainfall
+fiap/gs/OmarAssem/flood_sentry/alert/critical
+{"status":"ESP32 conectado ao MQTT"}
+
+fiap/gs/OmarAssem/flood_sentry/command/alert_status
+{"system_risk":"high"}
+{"system_risk":"normal"}
+{"comando": "teste_mqtt_cool"}
