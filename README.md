@@ -117,12 +117,9 @@ O projeto FloodSentry AI representa uma aplicação prática de conceitos estuda
 
 📦 **Atenção: Os arquivos da pasta `/data/raw` (dados geoespaciais brutos) estão disponíveis via Google Drive devido ao tamanho exceder o limite do GitHub.**
 
-🔗 Link para acesso: [Google Drive - FloodSentry Dataset](https://drive.google.com/drive/folders/1hjR-KTJmBPBI-zDuT2W02kejKWZd1FFY?usp=drive_link)
+🔗 Link para acesso: [Google Drive - FloodSentry Dataset](https://drive.google.com/drive/folders/1G6ksuPojAPhzIFFD0E9T72xl1jTX4C3m?usp=sharing)
 
-📌 **Para obter acesso:**
-1. Clique no link acima;
-2. Solicite permissão de visualização;
-3. O administrador do repositório concederá o acesso mediante solicitação.
+📌 **Acesso irrestrito**: qualquer pessoa com o link pode visualizar e baixar os arquivos.
 
 ---
 
